@@ -1,0 +1,207 @@
+/*
+Theme Name: KODOMOMIRAI
+Theme URI: https://sejuku.net/
+Description: Kodomomiraikan
+Version: 1.0.0
+Author: Makiko
+Author URI: https://www.sejuku.net/
+*/
+
+body{
+    font-family: 'Murecho','M PLUS 1 Code', monospace, sans-serif;
+    background-image: url(vivid-blurred-colorful-wallpaper-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:#4c5055;
+}
+/*header*/
+.navbar{
+    --bs-navbar-padding-y: 0rem;
+}
+/*ロゴ*/
+.logo_img{
+  height: 200px;
+}
+.navbar-brand{
+    background-color: rgba(197, 255, 240, 0.4);
+    border-radius: 50%;
+}
+.bottom-nav{
+    margin-top: -100px;
+    z-index: 30;
+}
+/* title*/
+.title{
+    font-family: 'Kiwi Maru', serif;
+    font-size: 50px;
+    color: #024AAD;
+    text-shadow:2px 2px 10px #ffffff;
+}
+
+
+.back-image-parent{
+    position: relative;
+}
+.back-image-z{
+    z-index: 10;
+}
+.back-image{
+    z-index: 3;
+    position: absolute;
+    top: 400px;
+    left: 400px;
+    right: 0px;
+    width: 30%;
+    opacity: 30%;
+}
+/*サイドバー*/
+.side-bar{
+    z-index: 13;
+}
+.btn-outline-primary{
+    --bs-btn-border-color: #e08a93;
+    --bs-btn-color: #ee6572;
+    --bs-btn-hover-bg: #e08a93;
+    --bs-btn-hover-border-color: #c5527b;
+    --bs-btn-active-bg: #c5527b;
+    --bs-btn-active-border-color: #c5527b;
+    width: 100px;
+    height: 80px;
+    text-shadow:white 5px 0 10px;
+}
+.sidebar-link{
+    text-decoration: none;
+    color: #024AAD;
+}
+.sidebar-link:hover{
+    text-decoration: underline;
+    color: #132256;
+}
+
+/* ハンバーガー */
+.navbar-toggler {
+    line-height: 0.5;
+    border-color: rgba(0,0,0,0);
+}
+/* 上部に出てくる三本線を見えないように＝stroke-width='0' */
+.navbar-toggler-icon2{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(212, 108, 228, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='0' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-nav{
+    display: flex;
+}
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none; 
+}
+/*offcanvas*/
+.offcanvas{
+    --bs-offcanvas-width: 200px;
+    --bs-offcanvas-bg: #fffffff1;
+}
+/* カルーセル */
+.carousel-section{
+    margin-top: -100px;
+    z-index: 12;
+}
+#navigation{
+    z-index: 15;
+}
+#navigation2{
+    z-index: 16;
+}
+.carousel-caption,
+.out-caption{
+    color: #024AAD;
+    text-shadow: 2px 2px 10px #ffffff;
+    /*
+    background-color: rgba(255,255,255,0.5);
+    */
+    padding: 2em;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/*カード*/
+.bg-primary-subtle {
+    background-color: #FDFFE9!important;
+}
+.card{
+--bs-card-border-color: rgba(0, 0, 0, 0);
+--bs-card-title-color:#132256;
+}
+.card-title{
+    text-shadow: 1px 2px 3px white;
+    z-index: 36;
+}
+.card-img{
+    width: 200px;
+    margin-top: -100px;
+    margin-bottom: -30px;
+    z-index: 30;
+}
+.card-img-b{
+    width: 200px;
+    margin-top: -50px;
+    margin-bottom: -80px;
+    z-index: 31;
+}
+/*footerのテーブル*/
+.table{
+    --bs-table-color: #495057;
+    --bs-table-bg: #f3dce680;
+}
+
+@media screen and (max-width:1024px){
+    body{
+        align-items: center;
+    }
+    #carousel-section{
+        padding-top: 0;
+        margin: 0 auto;
+        z-index: 10;
+    }
+    .back-image{
+       display: none;
+    }
+    .card-img-b{
+        width: 200px;
+        margin-top: -30px;
+        margin-bottom: -80px;
+    }
+    .title-bottom{
+        font-size: 2.5em;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .logo_img{
+        height: 100px;
+        margin-top: -30px;
+        border-radius: 20%;
+      }
+}
+@media screen and (min-width:576px) and (max-width:770px) {
+    .card-img-b{
+        width: 100px;
+        margin-top: -30px;
+        margin-bottom: -80px;
+    }
+    .card{
+        height: 215px;
+    }
+    .detail-btn{
+        width: 100px;
+        height: 30px;
+        font-size: 0.65em;
+        position: absolute;
+        bottom: 8px;
+        left: 30px;
+    }
+    .title{
+        font-size: 40px;
+    }
+   
+}
